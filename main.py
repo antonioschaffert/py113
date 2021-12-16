@@ -105,6 +105,10 @@ JOKES = [
 async def root():
     return {"message": "This is a jokes API"}
 
+@app.get("/hello")
+async def hello():
+    return {"ping": "pong"}
+
 # this endpoint returns a random joke
 @app.get("/random") 
 async def random_joke():
@@ -114,6 +118,10 @@ async def random_joke():
 @app.get("/joke-of-the-year") 
 async def joke_of_the_year():
     return JOKES[0]
+
+@app.get("/dumbest") 
+async def dumbest():
+    return JOKES[-1]
 
 @app.get("/all-jokes") 
 async def all_jokes():
