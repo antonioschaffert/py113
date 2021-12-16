@@ -96,6 +96,10 @@ JOKES = [
     {
         "question": "Why are elevator jokes so classic and good?",
         "answer": "They work on many levels."
+    },
+    {
+        "question": "What's the joker?",
+        "answer": "There is no joke."
     }
 ]
 
